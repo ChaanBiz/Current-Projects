@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    scroll-behavior: smooth;
+    body {
+        header.sticky {
+            background: #fff;
+            padding: 7px 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.1);
+            z-index: 10;
+        }
+        a {
+            text-decoration: none;
+        }
+        section {
+            padding: 70px 100px;
+            .button {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                .btn {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    border: none;
+                    background-color: rgb(221, 162, 255);
+                    border-radius: 5px;
+                    transition: .4s;
+                    a {
+                        color: white;
+                        font-size: 15px;
+                    }
+                    &:hover {
+                        background-color: rgb(200, 135, 235);
+                    }
+                    &:active {
+                        transform: scale(.94);
+                    }
+                }
+            }
+            .headings {
+                text-align: center;
+                transition: .4s;
+                &:hover {
+                    text-shadow: 0 0 20px white;
+                }
+            }
+        }
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .4s;
+    img {
+        width: 70px;
+        transition: .4s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    ul {
+        display: flex;
+        position: relative;
+        li {
+            position: relative;
+            list-style: none;
+            transition: .4s;
+            a {
+                color: black;
+                padding: 10px 35px;
+                position: block;
+                font-size: .9em;
+                transition: .4s;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 500;
+                &:hover {
+                    color:rgb(236, 38, 87);
+                }
+            }
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+#home {
+    height: 100vh;
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .image {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 50%;
+                transition: .4s;
+            }
+        }
+        .text p {
+            text-align: center;
+            padding: 0 50px;
+            transition: ease .4s;
+        }
+    }
+}
+
+#description {
+    background-color: rgb(221, 162, 255);
+    .block {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        .img {
+            display: flex;
+            justify-content: center;
+            min-width: 50%;
+            img {
+                border-radius: 3em;
+                max-width: 100%;
+                transition: .3s;
+                box-shadow: 10px 10px 0px rgba(0,0,0,.2);
+                &:hover {
+                    box-shadow: 0 0 20px rgba(255, 255, 255, .7);
+                    transform: scale(1.01);
+                }
+            }
+        }
+        .text {
+            padding-right: 2em;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    .quickdesc {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .boxes {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        .box {
+            background-color: rgb(230, 181, 253);
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 10px;
+            margin: 10px;
+            transition: .4s;
+            &:hover {
+                background-color: rgb(198, 155, 218);
+            }
+            .bx {
+                padding-top: 20px;
+                display: flex;
+                justify-content: center;
+                font-size: 2em;
+            }
+            p {
+                text-align: center;
+                padding: 20px 30px;
+            }
+        }
+    }
+    .btn {
+        box-shadow: 0 0 15px rgba(255, 255, 255, .4);
+    }
+}
+
+footer{
+    background-color: rgb(203, 142, 238);
+    position: relative;
+    padding: 50px 60px;
+    .container {
+        display: flex;
+        .footer-sec {
+            flex: 1;
+        }
+        .quicklinks {
+            .intro {
+                padding: 20px;
+                text-align: center;
+                a {
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    margin: 10px;
+                }
+            }
+            .links {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                li {
+                    list-style: none;
+                    margin-top: 10px;
+                    a {
+                        color: black;
+                        transition: .4s;
+                        &:hover {
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+        }
+        .reach-out {
+            padding: 20px;
+            .subscribe {
+                margin-top: 70px;
+                .signup {
+                    h3 {
+                        font-weight: 600;
+                    }
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+                        width: 100%;
+                        margin: 10px 0;
+                        input {
+                            outline: none;
+                            padding: 10px;
+                            width: 100%;
+                            border-radius: 20px;
+                            border: none;
+                            box-sizing: border-box;
+                        }
+                        button {
+                            position: absolute;
+                            bottom: 3px;
+                            right: 2px;
+                            z-index: 2;
+                            border-radius: 20px;
+                            border: none;
+                            padding: 5px 20px;
+                            font-size: 16px;
+                            background-color: rgb(230, 181, 253);
+                            transition: .4s;
+                            &:hover {
+                                background-color: rgb(200, 135, 235);
+                            }
+                            &:active {
+                                transform: scale(.94);
+                            }
+                        }
+                    }
+                }
+            }
+            .socials {
+                text-align: center;
+                margin-top: 15px;
+                .bx{
+                    color: white;
+                    font-size: 2em;
+                    margin: 0 10px;
+                    transition: .4s;
+                    cursor: pointer;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                    &:active {
+                        transform: scale(.98);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: rgb(203, 142, 238);
+    padding: 6px;
+    line-height: 17px;
+    padding: 20px 50px;
+    .privacy a {
+        color: black;
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 995px) {
+    body {
+        header.sticky {
+            padding: 5px 15px;
+        }
+    }
+    header{
+        padding: 10px 20px;
+        .navbar {
+            position: fixed;
+            top: 84.78px;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            display: block;
+            z-index: 10;
+            border-top: 1px solid black;
+            text-align: center;
+            transition: .4s;
+            a {
+                font-size: 17px;
+                display: block;
+                padding: 30px;
+                transition: .4s;
+                &:hover {
+                    background-color: black;
+                }
+            }
+            &.active {
+                right: 0;
+            }
+        }
+        .toggle {
+            width: 40px;
+            height: 40px;
+            background: url('images/menu.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 30px;
+            cursor: pointer;
+            transition: .2s;
+            filter: invert(1);
+            &.active {
+                background: url('images/close.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 25px;
+                cursor: pointer;
+                filter: invert(1);
+            }
+        }
+    }
+    #home .container .image img {
+        width: 90%;
+    }
+    #description {
+        .block {
+            flex-direction: column;
+            .text {
+                padding-right: 0;
+                &.img {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    footer .container {
+        flex-direction: column;
+        .footer-sec {
+            margin: 20px;
+        }
+    }
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 670px) {
+    body {
+        section {
+            padding: 70px 30px;
+            .headings h2 {
+                font-size: 1.4em;
+            }
+        }
+    }
+    #home .container .image img {
+        width: 100%;
+    }
+    #description {
+        .block {
+            margin-top: 20px;
+        }
+    }
+    footer {
+        padding: 50px 20px;
+        .container {
+            .footer-sec {
+                margin: 20px 0;
+            }
+            .reach-out .subscribe .signup form button {
+                padding: 5px 15px;
+            }
+        }
+    }
+}
