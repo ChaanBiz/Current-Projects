@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+.container {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.container .marg {
+  margin-bottom: 20px;
+}
+.container .marg .ms-colon, .container .marg .millisecond {
+  color: rgb(182, 156, 87);
+}
+.container span {
+  font-size: 2rem;
+}
+.container .buttons {
+  font-size: 0;
+}
+.container .buttons button {
+  width: 150px;
+  height: 40px;
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+  transition: 0.4s;
+  font-size: 1.2rem;
+}
+.container .buttons button:first-child, .container .buttons button:nth-child(2) {
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+}
+.container .buttons button:nth-child(3) {
+  border: none;
+}
+.container .buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.container .buttons button.active, .container .buttons button.stop-active {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=styles.css.map */
